@@ -32,16 +32,16 @@ export const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
+    const token = localStorage.getItem("token");
 
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    if (!token) {
+      logout(); // No token? Log out immediately.
+      return;
     }
 
-    // Fetch user and then check if logout is needed
     fetchUser().then(() => {
       if (location.pathname.startsWith("/dashboard")) {
-        logout();
+        logout(); // If on dashboard, log out after fetching user.
       }
     });
   }, []);
