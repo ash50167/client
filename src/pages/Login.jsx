@@ -82,15 +82,15 @@ const Login = () => {
             </a>
           </div> */}
           <button
-            className="w-full py-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 rounded-md text-white"
+            className="w-full py-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 cursor-pointer rounded-md text-white"
             type="submit"
           >
             Login
           </button>
-          <p className="text-center text-slate-700">
+          <p className="text-center text-slate-700 cursor-pointer">
             Don't have an account?{" "}
             <button
-              className="text-blue-500 hover:underline"
+              className="text-blue-500 hover:underline cursor-pointer"
               onClick={() => navigate("/")}
             >
               Sign Up

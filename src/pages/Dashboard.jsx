@@ -51,13 +51,13 @@ const Dashboard = () => {
         <div className="mt-5 flex justify-between">
           <button
             onClick={() => setIsEditing(true)}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition cursor-pointer"
           >
             Edit Profile
           </button>
           <button
             onClick={logout}
-            className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+            className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition cursor-pointer"
           >
             Logout
           </button>
@@ -126,13 +126,13 @@ const Dashboard = () => {
                 <button
                   type="button"
                   onClick={() => setIsEditing(false)}
-                  className="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition"
+                  className="px-4 py-2 cursor-pointer bg-gray-500 text-white rounded-md hover:bg-gray-600 transition"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+                  className="px-4 py-2 cursor-pointer bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
                 >
                   Save Changes
                 </button>

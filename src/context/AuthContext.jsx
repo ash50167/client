@@ -36,13 +36,14 @@ export const AuthProvider = ({ children }) => {
 
     if (storedUser) {
       setUser(JSON.parse(storedUser));
+    }
 
-      // Logout on page refresh if user is on dashboard
+    // Fetch user and then check if logout is needed
+    fetchUser().then(() => {
       if (location.pathname.startsWith("/dashboard")) {
         logout();
       }
-    }
-    fetchUser();
+    });
   }, []);
 
   // Login function
