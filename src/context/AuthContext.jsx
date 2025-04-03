@@ -5,7 +5,7 @@ import { toast } from "sonner";
 
 export const AuthContext = createContext();
 
-const API_URL = "https://server-zvwc.onrender.com";
+const API_URL = "https://server-lovat.vercel.app";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

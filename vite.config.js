@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://server-zvwc.onrender.com', // Your backend URL
+        target: 'https://server-lovat.vercel.app/', // Your backend URL
         changeOrigin: true,
         secure: true
       }
